@@ -1,0 +1,49 @@
+/** Search form */
+.search-form {
+  @extend .form-inline;
+}
+
+.search-form label {
+  @extend .form-group;
+
+  font-weight: normal;
+}
+
+.search-form .search-field {
+  @extend .form-control;
+}
+
+.search-form .search-submit {
+  @extend .btn;
+  @extend .btn-secondary;
+}
+
+.form-control {
+  border-radius: 0;
+  border: 0;
+  border-bottom: 2px dotted $black;
+  outline: 0;
+  font-family: $text-ff;
+  font-size: 12px;
+
+  &:focus {
+    outline: 0;
+    box-shadow: none;
+    border-color: $primary;
+  }
+}
+
+.nf-form-title {
+  color: $primary;
+  padding-bottom: 20px;
+  display: block;
+}
+
+.dsgvo-checkbox {
+  .nf-field-label label {
+    font-weight: 300;
+    margin-top: -12px;
+    // margin-left: -25px;
+    padding-right: 30px;
+  }
+}

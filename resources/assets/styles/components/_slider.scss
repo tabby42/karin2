@@ -1,0 +1,31 @@
+.slider-row {
+  position: relative;
+  padding-top: 7em;
+  padding-bottom: 9em;
+  margin-top: 8em;
+  background-color: $primary;
+}
+
+.swiper-container {
+  height: 400px;
+  width: 100%;
+  margin-bottom: 40px;
+
+  img {
+    height: 400px;
+    width: auto;
+    border: 12px solid $white;
+
+    @include media-breakpoint-down(xs) {
+      height: 300px;
+    }
+  }
+
+  .swiper-slide {
+    flex-shrink: 1;
+  }
+
+  @include media-breakpoint-down(xs) {
+    height: 300px;
+  }
+}

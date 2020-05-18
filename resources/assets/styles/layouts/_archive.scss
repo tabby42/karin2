@@ -1,0 +1,133 @@
+body.archive .wrap.container-fluid {
+  // background: $primary;
+  padding-top: 6em;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  .main {
+    padding-bottom: 8em;
+
+    > .row {
+      align-items: flex-start;
+    }
+  }
+
+  article.event {
+    @include heading-dotted-border-black();
+    @include shadow();
+
+    position: relative;
+    top: auto;
+    left: 0;
+    width: 60%;
+    padding: 35px 35px 40px;
+    margin: 0 auto;
+    margin-bottom: 5em;
+    max-width: 700px;
+
+    header {
+      position: relative;
+      margin-top: 10px;
+    }
+
+    .entry-summary {
+      font-family: $text-ff;
+      font-weight: 300;
+      font-size: $base-fontsize;
+      line-height: 1.6;
+      padding-top: 4.5em;
+    }
+
+    .entry-title {
+      font-size: 1.75rem;
+      color: $black;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      padding-left: 65px;
+      word-break: break-all;
+      white-space: normal;
+
+      p {
+        margin-bottom: 0;
+      }
+
+      @include media-breakpoint-down(xs) {
+        font-size: 1.55rem;
+      }
+    }
+
+    .badge.badge-info {
+      font-family: $text-ff;
+      background: transparent;
+      color: $black;
+      border-radius: 0;
+      font-size: 0.85rem;
+      font-weight: 400;
+      padding: 0;
+      text-align: left;
+      line-height: 1.6;
+      word-break: break-all;
+      white-space: normal;
+
+      .event-address {
+        font-weight: 400;
+        font-size: 14px;
+      }
+
+      &.pad-left {
+        padding-left: 40px;
+        padding-top: 5px;
+      }
+    }
+
+    .event-icon {
+      position: relative;
+
+      img {
+        width: 55px;
+        position: absolute;
+        top: 2px;
+        left: 0;
+      }
+    }
+
+    .event-date,
+    .event-time,
+    .event-price {
+      background: $primary;
+      color: #fff;
+      padding: 3px 10px;
+      display: inline-block;
+      margin-right: 5px;
+      margin-bottom: 10px;
+      border-left: 4px solid $black;
+    }
+
+    .event-location {
+      font-weight: 700;
+      font-size: 1.1em;
+      margin-top: 5px;
+    }
+
+    .location-pin {
+      position: relative;
+
+      img {
+        width: 32px;
+        height: 35px;
+        position: absolute;
+        top: 0;
+        left: -40px;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      width: 80%;
+    }
+
+    @include media-breakpoint-down(xs) {
+      width: 90%;
+      padding: 25px 25px 30px;
+    }
+  }
+}

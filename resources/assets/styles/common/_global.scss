@@ -1,0 +1,144 @@
+body {
+  font-family: $text-ff;
+  font-weight: 300;
+  overflow-x: hidden;
+  font-size: $base-fontsize;
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $headings-ff;
+}
+
+h1 {
+  font-size: 2.4em;
+  color: $primary;
+}
+
+p a {
+  color: $black;
+  border-bottom: 1px dotted $primary !important;
+  padding: 2px;
+  transition: $transition-default;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $primary;
+  }
+}
+
+b,
+strong {
+  font-weight: 400;
+  color: $primary;
+}
+
+.orange-row b,
+.orange-row strong {
+  font-weight: 400;
+  color: $black;
+}
+
+em {
+  font-weight: 400;
+}
+
+.orange-row em {
+  font-weight: 400;
+  color: $black;
+}
+
+.orange-row img {
+  border: 10px solid $white;
+}
+
+.wrap.container-fluid {
+  padding-top: 5em;
+}
+
+body:not(.home):not(.archive) .wrap.container-fluid {
+  margin-top: 5em;
+
+  @include media-breakpoint-down(sm) {
+    margin-top: 8em;
+  }
+}
+
+.row.boxed-row,
+.top-row {
+  margin: 0 auto;
+
+  @include media-breakpoint-up(md) {
+    width: 80%;
+  }
+
+  @include media-breakpoint-down(md) {
+    width: 95%;
+  }
+}
+
+.orange-row {
+  background-color: $primary;
+  color: $white;
+}
+
+.col-spacer {
+  height: 70px;
+
+  @include media-breakpoint-down(sm) {
+    height: 40px;
+  }
+}
+
+.heading-container {
+  @include heading-dotted-border();
+
+  top: -50px;
+  text-align: center;
+  padding: 32px 20px 19px;
+
+  h3 {
+    color: $black;
+  }
+
+  @include media-breakpoint-down(sm) {
+    width: 60%;
+  }
+
+  @include media-breakpoint-down(xs) {
+    width: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+body.page-id-290 .heading-container,
+body.page-id-45 .heading-container {
+  width: 300px;
+  top: 75px;
+  transform: rotate(-5deg);
+
+  @include media-breakpoint-down(xs) {
+    left: 50%;
+    transform: rotate(-5deg) translateX(-45%);
+  }
+}
+
+blockquote {
+  font-weight: 500;
+  color: $primary;
+
+  cite {
+    font-size: $base-fontsize;
+    color: $black;
+  }
+}

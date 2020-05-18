@@ -1,0 +1,39 @@
+figure.image-bordered,
+.image-bordered figure {
+  position: relative;
+  margin: 0;
+  padding: 3px;
+
+  @include dotted-border('orange');
+
+  figcaption {
+    @include boxed-heading();
+  }
+
+  @include media-breakpoint-only(sm) {
+    margin: 0 50px;
+  }
+}
+
+body.page-id-290 .wrap.container-fluid,
+body.page-id-45 .wrap.container-fluid {
+  background: $primary;
+  margin-top: 0 !important;
+  padding-top: 8em;
+
+  @include media-breakpoint-down(xs) {
+    padding-top: 5em;
+  }
+}
+
+body.page-id-290 .vc_column_container > .vc_column-inner {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: -5px;
+}
+
+.vc_empty_space {
+  @include media-breakpoint-down(sm) {
+    // display: none;
+  }
+}

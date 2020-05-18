@@ -1,0 +1,130 @@
+.banner .nav li {
+  @extend .nav-item;
+}
+
+.banner .nav a {
+  @extend .nav-link;
+}
+
+.navbar {
+  @include shadow();
+
+  position: absolute;
+  z-index: 100;
+  top: 40px;
+  left: 40px;
+  width: 300px;
+  padding: 22px 27px;
+  background-color: $white;
+  transition: $transition-default;
+
+  .navbar-brand {
+    img {
+      width: 185px;
+    }
+  }
+
+  .navbar-toggler-icon {
+    outline: 0;
+    width: 1.7em;
+    height: 1.7em;
+
+    .ti-menu {
+      top: 4px;
+      position: relative;
+    }
+
+    .icon-name {
+      font-family: $headings-ff;
+      font-size: 15px;
+      position: absolute;
+      -webkit-transform: rotate(-5deg);
+      transform: rotate(-5deg);
+      top: 60px;
+      right: 28px;
+    }
+  }
+
+  .navbar-toggler {
+    outline: 0;
+    padding: 0;
+    margin-top: -25px;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-link {
+    color: $black;
+    font-family: $headings-ff;
+    font-size: 20px;
+    padding: 0.5rem 0 !important;
+    padding-bottom: 0;
+    transition: $transition-default;
+
+    &:hover,
+    &:focus {
+      color: $primary;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    height: calc(100% - 12px);
+    width: 288px;
+    left: 6px;
+    top: 6px;
+    z-index: -1;
+
+    @include dotted-border('orange');
+  }
+
+  .nav {
+    padding-top: 20px;
+    padding-left: 3px;
+
+    .dropdown,
+    .dropdown-menu {
+      position: static;
+      min-width: 100px;
+      width: 100%;
+      font-family: $headings-ff;
+      border: 0;
+      transition: $transition-default;
+
+      .dropdown-menu {
+        border-top: 2px dotted $black;
+        border-bottom: 2px dotted $black;
+        border-radius: 0;
+      }
+
+      .dropdown-toggle::after {
+        position: absolute;
+        margin-top: 12px;
+        margin-left: 0.5rem;
+      }
+
+      .dropdown-item {
+        transition: $transition-default;
+        padding: 0.25rem 1.5rem;
+
+        &:hover,
+        &:focus {
+          color: $primary;
+          background-color: $white;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media (max-width: 360px) {
+    top: 3%;
+  }
+}

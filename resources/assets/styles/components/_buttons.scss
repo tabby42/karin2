@@ -1,0 +1,80 @@
+.btn.btn-primary,
+.btn-primary {
+  @include boxed-heading();
+
+  border-radius: 0;
+  padding: 28px 35px 20px;
+  font-size: 24px;
+
+  &.inverse {
+    color: $white;
+    background: $black;
+    border-color: $black !important;
+    position: static;
+    transform: rotate(0);
+    box-shadow: none;
+
+    &:hover,
+    &:focus {
+      background: $primary !important;
+      border-color: $primary !important;
+    }
+  }
+
+  &.btn-details {
+    position: absolute;
+    right: -60px;
+    left: auto;
+    bottom: -50px;
+    padding-left: 45px;
+    padding-right: 45px;
+
+    &:hover,
+    &:focus {
+      background: $black !important;
+      border-color: $black !important;
+    }
+
+    @include media-breakpoint-down(sm) {
+      right: 0;
+    }
+  }
+}
+
+.btn.btn-default {
+  font-family: $headings-ff;
+  color: $white;
+  background-color: transparent;
+  border-radius: 0;
+  padding: 8px 30px 3px;
+  font-size: 20px;
+
+  @include dotted-border('white');
+
+  // border-width: 5px;
+  border-color: $white;
+  transition: $transition-default;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $primary;
+    box-shadow: none;
+  }
+
+  &.btn-alt-hover {
+    &:hover,
+    &:focus,
+    &:active {
+      color: $black;
+    }
+  }
+}
+
+.cookie-bar-bar button#catapultCookie {
+  padding: 15px 23px 10px;
+  border-radius: 0;
+  font-family: $headings-ff;
+  line-height: 1;
+  font-size: 20px;
+}
