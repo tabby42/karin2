@@ -26,14 +26,27 @@ body.page-id-45 .wrap.container-fluid {
   }
 }
 
-body.page-id-290 .vc_column_container > .vc_column-inner {
+body.page-id-290 .vc_inner:not(.heading-container) .vc_column_container > .vc_column-inner {
   padding-left: 10px;
   padding-right: 10px;
-  margin-bottom: -5px;
+  margin-bottom: -15px;
 }
 
-.vc_empty_space {
+.vc_empty_space.mobile-hidden {
   @include media-breakpoint-down(sm) {
-    // display: none;
+    display: none;
+  }
+}
+
+div:not(.grid-gallery-mosaic):not(.grid-gallery-fixed).grid-gallery .gg-link {
+  @include media-breakpoint-down(md) {
+    margin-bottom: 20px;
+    float: none !important;
+  }
+}
+
+.vc_row.mobile-padding {
+  @include media-breakpoint-down(md) {
+    padding: 0 35px;
   }
 }
