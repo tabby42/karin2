@@ -9,6 +9,10 @@ body.archive .wrap.container-fluid {
 
     > .row {
       align-items: flex-start;
+
+      @include media-breakpoint-down(xs) {
+        padding-bottom: 10em;
+      }
     }
   }
 

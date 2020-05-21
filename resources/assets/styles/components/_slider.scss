@@ -4,6 +4,10 @@
   padding-bottom: 9em;
   margin-top: 8em;
   background-color: $primary;
+
+  @include media-breakpoint-down(xs) {
+    padding-bottom: 16em;
+  }
 }
 
 .swiper-container {
