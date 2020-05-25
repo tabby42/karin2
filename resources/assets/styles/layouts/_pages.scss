@@ -39,10 +39,22 @@ body.page-id-290 .vc_inner:not(.heading-container) .vc_column_container > .vc_co
   }
 }
 
-div:not(.grid-gallery-mosaic):not(.grid-gallery-fixed).grid-gallery .gg-link {
+#grid-gallery-1-78288 {
+  @include media-breakpoint-down(md) {
+    width: 90% !important;
+  }
+}
+
+div:not(.grid-gallery-mosaic):not(.grid-gallery-fixed).grid-gallery #photos-1 .gg-link {
   @include media-breakpoint-down(md) {
     margin-bottom: 20px;
     float: none !important;
+  }
+}
+
+#photos-1 {
+  .grid-gallery-caption figcaption {
+    padding-bottom: 20px;
   }
 }
 
