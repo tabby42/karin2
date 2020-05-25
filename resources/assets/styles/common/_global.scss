@@ -47,7 +47,8 @@ p a {
 }
 
 .orange-row p a,
-.orange-row ul a {
+.orange-row ul a,
+.orange-row ol a {
   color: $black;
   font-weight: 400;
   border-bottom: 1px dotted $black !important;
