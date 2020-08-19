@@ -1,4 +1,5 @@
-body.archive .wrap.container-fluid {
+body.archive .wrap.container-fluid,
+body.blog .wrap.container-fluid {
   // background: $primary;
   padding-top: 6em;
   padding-left: 5%;
@@ -16,7 +17,7 @@ body.archive .wrap.container-fluid {
     }
   }
 
-  article.event {
+  article {
     @include heading-dotted-border-black();
     @include shadow();
 
@@ -122,6 +123,12 @@ body.archive .wrap.container-fluid {
         position: absolute;
         top: 0;
         left: -40px;
+      }
+    }
+
+    &.format-standard {
+      .entry-title {
+        padding-left: 0;
       }
     }
 

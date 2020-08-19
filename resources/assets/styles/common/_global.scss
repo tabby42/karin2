@@ -97,13 +97,19 @@ body:not(.home):not(.archive) .wrap.container-fluid {
   }
 }
 
+body.blog {
+  margin-top: 11em;
+}
+
 .row.boxed-row,
 .top-row {
   margin: 0 auto;
 
-  @include media-breakpoint-up(md) {
-    width: 80%;
-    max-width: 1200px;
+  &:not(#archive-header) {
+    @include media-breakpoint-up(md) {
+      width: 80%;
+      max-width: 1200px;
+    }
   }
 
   @include media-breakpoint-down(md) {
