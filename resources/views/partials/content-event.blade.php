@@ -4,7 +4,6 @@
     {{-- @include('partials/entry-meta') --}}
   </header>
   <div class="entry-summary">
-    huhu event huhu
     @php(the_content())
   </div>
 </article>
