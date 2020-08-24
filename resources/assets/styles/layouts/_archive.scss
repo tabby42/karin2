@@ -30,9 +30,34 @@ body.blog .wrap.container-fluid {
     margin-bottom: 5em;
     max-width: 700px;
 
+    .entry-title {
+      font-size: 1.75rem;
+      color: $black;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      padding-left: 65px;
+      word-break: break-all;
+      white-space: normal;
+
+      &.blog-title {
+        padding-left: 0;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+
     header {
       position: relative;
       margin-top: 10px;
+    }
+
+    div.entry-excerpt p {
+      font-family: $text-ff;
+      font-weight: 300;
+      font-size: $base-fontsize;
+      line-height: 1.6;
     }
 
     .entry-summary {
@@ -43,95 +68,6 @@ body.blog .wrap.container-fluid {
       padding-top: 4.5em;
     }
 
-    .entry-title {
-      font-size: 1.75rem;
-      color: $black;
-      margin-top: 10px;
-      margin-bottom: 20px;
-      padding-left: 65px;
-      word-break: break-all;
-      white-space: normal;
-
-      p {
-        margin-bottom: 0;
-      }
-
-      @include media-breakpoint-down(xs) {
-        font-size: 1.55rem;
-      }
-    }
-
-    .badge.badge-info {
-      font-family: $text-ff;
-      background: transparent;
-      color: $black;
-      border-radius: 0;
-      font-size: 0.85rem;
-      font-weight: 400;
-      padding: 0;
-      text-align: left;
-      line-height: 1.6;
-      word-break: break-all;
-      white-space: normal;
-
-      .event-address {
-        font-weight: 400;
-        font-size: 14px;
-      }
-
-      &.pad-left {
-        padding-left: 40px;
-        padding-top: 5px;
-      }
-    }
-
-    .event-icon {
-      position: relative;
-
-      img {
-        width: 55px;
-        position: absolute;
-        top: 2px;
-        left: 0;
-      }
-    }
-
-    .event-date,
-    .event-time,
-    .event-price {
-      background: $primary;
-      color: #fff;
-      padding: 3px 10px;
-      display: inline-block;
-      margin-right: 5px;
-      margin-bottom: 10px;
-      border-left: 4px solid $black;
-    }
-
-    .event-location {
-      font-weight: 700;
-      font-size: 1.1em;
-      margin-top: 5px;
-    }
-
-    .location-pin {
-      position: relative;
-
-      img {
-        width: 32px;
-        height: 35px;
-        position: absolute;
-        top: 0;
-        left: -40px;
-      }
-    }
-
-    &.format-standard {
-      .entry-title {
-        padding-left: 0;
-      }
-    }
-
     @include media-breakpoint-down(md) {
       width: 80%;
     }
@@ -139,6 +75,72 @@ body.blog .wrap.container-fluid {
     @include media-breakpoint-down(xs) {
       width: 90%;
       padding: 25px 25px 30px;
+      font-size: 1.55rem;
+    }
+  }
+
+  .badge.badge-info {
+    font-family: $text-ff;
+    background: transparent;
+    color: $black;
+    border-radius: 0;
+    font-size: 0.85rem;
+    font-weight: 400;
+    padding: 0;
+    text-align: left;
+    line-height: 1.6;
+    word-break: break-all;
+    white-space: normal;
+
+    .event-address {
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    &.pad-left {
+      padding-left: 40px;
+      padding-top: 5px;
+    }
+  }
+
+  .event-icon {
+    position: relative;
+
+    img {
+      width: 55px;
+      position: absolute;
+      top: 2px;
+      left: 0;
+    }
+  }
+
+  .event-date,
+  .event-time,
+  .event-price {
+    background: $primary;
+    color: #fff;
+    padding: 3px 10px;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border-left: 4px solid $black;
+  }
+
+  .event-location {
+    font-weight: 700;
+    font-size: 1.1em;
+    margin-top: 5px;
+  }
+
+  .location-pin {
+    position: relative;
+
+    img {
+      width: 32px;
+      height: 35px;
+      position: absolute;
+      top: 0;
+      left: -40px;
     }
   }
 }

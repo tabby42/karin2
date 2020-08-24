@@ -35,6 +35,17 @@
       border-color: $black !important;
     }
 
+    /* &.blog-more {
+      background-color: $black;
+      border-color: $white !important;
+
+      &:hover,
+      &:focus {
+        background: $black !important;
+        border-color: $white !important;
+      }
+    } */
+
     @include media-breakpoint-down(sm) {
       right: 0;
     }

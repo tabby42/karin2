@@ -8,6 +8,11 @@ body {
 
 img {
   width: 100%;
+  height: auto;
+
+  /*   &.wp-post-image {
+    //border: 10px solid $primary;
+  } */
 }
 
 .img-bordered img,
@@ -81,6 +86,28 @@ em {
   color: $black;
 }
 
+article.format-standard {
+  .blog-left-top {
+    @include media-breakpoint-up(xs) {
+      padding-right: 20px;
+    }
+  }
+
+  .entry-title {
+    padding-left: 0;
+  }
+
+  figure {
+    margin-right: auto;
+    transform: rotate(-2deg);
+
+    img {
+      width: auto;
+      height: 300px;
+    }
+  }
+}
+
 body.page-id-290 .orange-row img {
   border: 10px solid $white;
 }
@@ -97,9 +124,9 @@ body:not(.home):not(.archive) .wrap.container-fluid {
   }
 }
 
-body.blog {
+/* body.blog {
   margin-top: 11em;
-}
+} */
 
 .row.boxed-row,
 .top-row {
