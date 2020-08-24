@@ -7,7 +7,6 @@
       {{-- heading --}}
       <h2 class="entry-title">{!! get_the_title() !!}</h2>
       @include('partials/entry-meta')
-      huhusingle
     </header>
     <div class="entry-content">
       @php(the_content())

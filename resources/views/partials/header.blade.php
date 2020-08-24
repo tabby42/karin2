@@ -29,3 +29,6 @@
 @if (is_archive())
     @include('partials.archive-header')
 @endif
+@if (is_home())
+    @include('partials.blog-header')
+@endif
