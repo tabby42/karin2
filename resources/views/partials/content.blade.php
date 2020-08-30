@@ -8,10 +8,9 @@
     </div>
     <div>
       <figure class="image-bordered">
-      <span></span>
-      <?php if ( has_post_thumbnail() ) : ?>
-          <?php the_post_thumbnail(); ?>
-      <?php endif; ?>
+      @if (has_post_thumbnail())
+          @php(the_post_thumbnail())
+      @endif
       </figure>
     </div>
   </div>
