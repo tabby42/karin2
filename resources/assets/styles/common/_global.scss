@@ -97,13 +97,21 @@ article.format-standard {
     padding-left: 0;
   }
 
+  img {
+    @include media-breakpoint-up(md) {
+      max-width: 60%;
+    }
+  }
+
   figure {
     margin-right: auto;
     transform: rotate(-2deg);
+    width: 300px;
 
     img {
-      width: auto;
-      height: 300px;
+      width: 300px;
+      max-width: 282px;
+      height: auto;
     }
   }
 }
