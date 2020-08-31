@@ -108,6 +108,16 @@ article.format-standard {
     transform: rotate(-2deg);
     width: 300px;
 
+    @include media-breakpoint-up(md) {
+      position: relative;
+      top: -13px;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-left: 5px;
+      margin-bottom: 10px;
+    }
+
     img {
       width: 300px;
       max-width: 282px;
@@ -132,9 +142,15 @@ body:not(.home):not(.archive) .wrap.container-fluid {
   }
 }
 
-/* body.blog {
-  margin-top: 11em;
-} */
+body.blog main > .row {
+  display: block;
+}
+
+body.blog.home-data .wrap.container-fluid {
+  @include media-breakpoint-down(md) {
+    padding-top: 2em;
+  }
+}
 
 .row.boxed-row,
 .top-row {

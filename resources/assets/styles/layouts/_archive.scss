@@ -36,7 +36,8 @@ body.blog .wrap.container-fluid {
       margin-top: 10px;
       margin-bottom: 20px;
       padding-left: 65px;
-      word-break: break-all;
+
+      /* word-break: break-all; */
       white-space: normal;
 
       &.blog-title {
