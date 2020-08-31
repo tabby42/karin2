@@ -106,7 +106,7 @@ article.format-standard {
   figure {
     margin-right: auto;
     transform: rotate(-2deg);
-    width: 300px;
+    width: 260px;
 
     @include media-breakpoint-up(md) {
       position: relative;
@@ -119,7 +119,7 @@ article.format-standard {
     }
 
     img {
-      width: 300px;
+      width: 242px;
       max-width: 282px;
       height: auto;
     }
