@@ -80,11 +80,11 @@
     }
 
     @include media-breakpoint-down(md) {
-      top: 135px;
+      top: 200px;
       left: 35%;
     }
 
-    @include media-breakpoint-down(sm) {
+    @media (max-width: 768px) {
       top: 60%;
       left: 20%;
     }
@@ -119,5 +119,40 @@
 
   @media (max-width: 360px) {
     height: 700px;
+  }
+
+  .crowdfunding-container {
+    @include heading-dotted-border-black();
+    @include shadow();
+
+    left: 20px;
+    right: auto;
+    top: 50%;
+    bottom: auto;
+    width: 280px;
+    padding: 30px 30px 15px;
+    z-index: 999;
+    transform: rotate(-5deg);
+
+    h3 {
+      font-size: $base-fontsize * 1.5;
+    }
+
+    .btn-details {
+      position: absolute;
+      right: 5px;
+      left: auto;
+      bottom: -25px;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+    @media (max-width: 768px) {
+      top: 42%;
+    }
+
+    @media (max-width: 360px) {
+      top: 42%;
+    }
   }
 }
