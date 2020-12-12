@@ -125,7 +125,7 @@
     @include heading-dotted-border-black();
     @include shadow();
 
-    left: 20px;
+    left: 5%;
     right: auto;
     top: 50%;
     bottom: auto;
@@ -149,6 +149,7 @@
 
     @media (max-width: 768px) {
       top: 42%;
+      left: 20px;
     }
 
     @media (max-width: 360px) {

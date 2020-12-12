@@ -4,14 +4,14 @@
     <div class="blog-left-top">
       <h2 class="entry-title blog-title">{{  get_the_title() }}</h2>
       @include('partials/entry-meta')
-      <div class="entry-excerpt">@php(the_excerpt())</div>
+      {{-- <div class="entry-excerpt">@php(the_excerpt())</div> --}}
     </div>
     <div>
-      <figure class="image-bordered">
+      {{-- <figure class="image-bordered">
       @if (has_post_thumbnail())
           @php(the_post_thumbnail())
       @endif
-      </figure>
+      </figure> --}}
     </div>
   </div>
   </header>
