@@ -1,9 +1,9 @@
 export default {
   init() {
     // JavaScript to be fired on all pages
-    var eventSummary = $("article .entry-summary"),
+    var eventSummary = $("article.type-event .entry-summary"),
         //blogMore = $('.btn.btn-details.blog-more'),
-        btnDetail = $(".btn.btn-details");
+        btnDetail = $(".btn.btn-details:not(blog-more)");
 
     eventSummary.hide();
     //blogMore.hide();

@@ -18,7 +18,7 @@
   <div class="entry-content entry-summary">
     @php(the_content())
   </div>
-  <div class="text-right position-relative">
+ {{--  <div class="text-right position-relative">
       <button type="button" class="btn btn-primary btn-lg btn-details blog-more">mehr</button>
-    </div>
+    </div> --}}
 </article>

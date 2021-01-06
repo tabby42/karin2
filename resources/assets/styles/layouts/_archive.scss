@@ -145,3 +145,12 @@ body.blog .wrap.container-fluid {
     }
   }
 }
+
+body.blog .wrap.container-fluid article .entry-summary {
+  padding-top: 1.5em !important;
+  text-align: center;
+
+  .fb-post {
+    overflow: auto;
+  }
+}
